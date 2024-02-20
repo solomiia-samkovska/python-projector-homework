@@ -8,7 +8,10 @@ def mult(a, b):
     return a * b
 
 def div(a, b):
-    return a / b
+    if b == 0:
+        return "Error: Division by zero"
+    else:
+        return a / b
 
 def calc():
     operation = input("Select operation:\n for Addition enter '+'\n for Subtraction enter '-'\n for Multiplication enter '*'\n for Division enter '/'")
