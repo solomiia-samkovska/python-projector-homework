@@ -1,12 +1,15 @@
 def sum(a, b):
     return a + b
 
-def sub(a,b):
+def sub(a, b):
     return a - b
 
+def mult(a, b):
+    return a * b
+
 def calc():
-    operation = input("Select operation. For addition enter '+', for subtraction enter '-': ")
-    if operation not in ["+", "-"]:
+    operation = input("Select operation:\n for Addition enter '+'\n for Subtraction enter '-'\n for Multiplying anter '*'")
+    if operation not in ["+", "-", "*"]:
         print("Invalid input")
         return
     
@@ -18,6 +21,8 @@ def calc():
             print(f"{a} + {b} = ", sum(a,b))
         case "-":
             print(f"{a} - {b} = ", sub(a,b))
+        case "*":
+            print(f"{a} * {b} = ", mult(a,b))
 
 calc()
 
